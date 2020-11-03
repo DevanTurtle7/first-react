@@ -10,18 +10,6 @@ function Square(props) {
     );
 }
 
-/*
-
-
-
-Next section:
-Showing the Past Moves
-
-https://reactjs.org/tutorial/tutorial.html#showing-the-past-moves
-
-
-*/
-
 class Board extends React.Component {
     constructor(props) {
         super(props);
