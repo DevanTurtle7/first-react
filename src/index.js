@@ -127,10 +127,25 @@ class Game extends React.Component {
     }
 }
 
+class CustomModule extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            activated: this.props.activated,
+        }
+    }
+
+    render() {
+        var activated = this.state.activated;
+        var text = activated ? "Hello!" : "Hello"
+        return <h1>{text}</h1>
+    }
+}
+
 // ========================================
 
 ReactDOM.render(
-    <Game />,
+    <CustomModule activated={true}/>,
     document.getElementById('root')
 );
 
