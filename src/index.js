@@ -145,6 +145,7 @@ class CustomModule extends React.Component {
 // ========================================
 
 ReactDOM.render(
+    //<Game/>,
     <CustomModule activated={true}/>,
     document.getElementById('root')
 );
